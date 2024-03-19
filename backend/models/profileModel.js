@@ -5,7 +5,14 @@ const profileSchema = new mongoose.Schema({
     type: mongoose.Schema.Types.ObjectId,
     ref: "User",
   },
+  sex: {
+    type: String,
+    required: true,
+  },
   website: {
+    type: String,
+  },
+  socials: {
     type: String,
   },
   profilepictureUrl: {
